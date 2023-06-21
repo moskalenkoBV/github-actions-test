@@ -1,4 +1,4 @@
-name: 'Cache Test'
+name: 'Cache Test Push'
 on:
   push:
     branches:
