@@ -22,5 +22,6 @@ jobs:
         with:
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-      - name: 'Install dependencies'
+      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        name: 'Install dependencies'
         run: npm install
