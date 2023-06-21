@@ -1,31 +1,16 @@
-# GithubActionsTest
+Solutions to additional challenges given in React's "tic tac toe" tutorial. [Demo](https://harman052.github.io/react-tutorial-solutions/)<br><br>
+In addition to tutorial challenges, reset and play again buttons are added. Technically, both are same. Reset button appears all the time but play again shows up only when game is over (i.e. either draw or win/lose).
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### How to start the app?
 
-## Code scaffolding
+Go to the app root directory and run: `npm start`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+It will start the development server. App will open at [http://localhost:3000](http://localhost:3000) in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
 
-## Build
+### Useful links
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+[Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html).
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Suggestions/contributions for all sorts of improvements are highly encouraged. :-)
