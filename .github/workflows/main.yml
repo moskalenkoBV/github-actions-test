@@ -23,3 +23,9 @@ jobs:
         run: npm install
       - name: 'Build'
         run: npm run build
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          start: npm run cypress
+          wait-on: 'http://localhost:3388'
+          config: baseUrl=http://localhost:3388

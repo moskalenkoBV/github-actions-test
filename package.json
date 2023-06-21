@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "angular-http-server --path ./build/ -p 3388 --silent",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,5 +28,9 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://harman052.github.io/react-tutorial-solutions"
+  "homepage": "https://harman052.github.io/react-tutorial-solutions",
+  "devDependencies": {
+    "angular-http-server": "^1.11.3",
+    "cypress": "^12.15.0"
+  }
 }
