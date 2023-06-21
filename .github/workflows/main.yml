@@ -26,6 +26,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
+          install: false
           start: npm run cypress
           wait-on: 'http://localhost:3388'
           config: baseUrl=http://localhost:3388
