@@ -26,5 +26,8 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: 'Install dependencies'
+      - if: steps.cache-npm.outputs.cache-hit != 'true'
+        name: 'Install dependencies'
         run: npm install
+      - name: 'Build'
+        run: npm run build
