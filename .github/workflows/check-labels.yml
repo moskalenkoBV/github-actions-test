@@ -21,4 +21,4 @@ jobs:
     needs: label
     if: needs.label.output == 'success'
     steps:
-      - run: exit 0
+      - run: exit 1
