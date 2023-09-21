@@ -1,8 +1,9 @@
 name: Check Label
 on:
   pull_request:
-    - main
-    - stage_v2
+    branches:
+      - main
+      - stage_v2
 jobs:
   label:
     runs-on: ubuntu-latest
