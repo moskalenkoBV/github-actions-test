@@ -9,8 +9,12 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-      - uses: mheap/github-action-required-labels@v5
+      - id: label
+        uses: mheap/github-action-required-labels@v5
         with:
           mode: minimum
           count: 1
           labels: 'bug'
+          exit_type: success
+      - id: status
+        if: steps.label.outputs == 'success'
