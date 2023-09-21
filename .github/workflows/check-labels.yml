@@ -17,7 +17,7 @@ jobs:
           labels: 'bug'
           exit_type: success
   bevalidation:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     needs: label
     steps:
       - run: exit 1
