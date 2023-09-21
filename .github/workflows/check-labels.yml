@@ -17,4 +17,5 @@ jobs:
           labels: 'bug'
           exit_type: success
       - id: status
+        run: echo SUCCESS
         if: steps.label.outputs == 'success'
