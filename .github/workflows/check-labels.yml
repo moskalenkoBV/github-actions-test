@@ -16,6 +16,9 @@ jobs:
           count: 1
           labels: 'bug'
           exit_type: success
-      - id: status
-        run: echo SUCCESS
-        if: steps.label.outputs == 'success'
+  bevalidation:
+    runs-on: ubuntu-lates
+    needs: label
+    if: needs.label.output === 'success'
+    steps:
+      - run: exit 0
