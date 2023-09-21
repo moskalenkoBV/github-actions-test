@@ -1,7 +1,8 @@
 name: Check Label
 on:
   pull_request:
-    types: [opened, labeled, unlabeled]
+    - main
+    - stage_v2
 jobs:
   label:
     runs-on: ubuntu-latest
