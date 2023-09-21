@@ -1,0 +1,13 @@
+name: Check Label
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled]
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mheap/github-action-required-labels@v5
+        with:
+          mode: minimum
+          count: 1
+          labels: 'bug'
