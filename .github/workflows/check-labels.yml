@@ -1,0 +1,12 @@
+name: Check Label
+on: workflow_dispatch
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - id: label
+        uses: mheap/github-action-required-labels@v5
+        with:
+          mode: minimum
+          count: 1
+          labels: 'bug'
